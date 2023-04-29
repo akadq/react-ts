@@ -1,6 +1,11 @@
-import React, {useState} from 'react';
+import React, {FC, MouseEventHandler, useState} from 'react';
 
-const Button = () => {
+interface IProps {
+count: number;
+onClick: MouseEventHandler<HTMLButtonElement>;
+}
+
+const Button: FC <IProps> = ({onClick, count}) => {
     // const products = [
     //     {title: 'apple', isFruit: true, id:1},
     //     {title: 'carrot', isFruit: true, id:2},
@@ -15,7 +20,7 @@ const Button = () => {
    //  );
     return (
         <div>
-            {/*<button onClick={onClick}>Clicked {count} times</button>*/}
+            <button onClick={onClick}>Clicked {count} times</button>
             {/*<button onClick={onClick}>Clicked {count} times</button>*/}
         </div>
     );
