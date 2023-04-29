@@ -9,7 +9,7 @@ const App = () => {
     }
        return (
         <div>
-            <Button count={count} onClick={handleClick}/>
+            {/*<Button count={count} onClick={handleClick}/>*/}
         </div>
     );
 };
