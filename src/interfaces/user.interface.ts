@@ -3,9 +3,3 @@ export interface IUser {
     name: string;
     email: string;
 }
-
-// export interface ICommento {
-//     sky: string;
-//     bridge: string;
-//     year: number;
-// }
